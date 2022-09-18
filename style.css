@@ -1,0 +1,83 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    outline: none;
+    color: white;
+}
+
+@font-face {
+    font-family: "Press Start 2P";
+    src: url(./fonts/PressStart2P-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Roboto Medium";
+    font-weight: 500;
+    src: url(./fonts/Roboto-Medium.ttf);
+}
+
+:root {
+    --game-font: 'Press Start 2P', cursive;
+    --card-title: 'Roboto Medium', sans-serif;
+}
+
+body {
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #171c22;
+    box-sizing: border-box;
+    font-size: 18px;
+    gap: 3em;
+}
+
+.section {
+    margin-left: 1em;
+    padding: 2em;
+    background-color: #000000;
+}
+
+.subject-title {
+    margin-bottom: 1em;
+}
+
+#projects {
+    font-size: calc(16px + 2 * ((100vw) / 170));
+    font-family: var(--game-font);
+    margin: 1em 0 0 1em;
+    text-shadow: 5px 5px gray;
+}
+
+.subject {
+    width: 100vw;
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    gap: 1em;
+}
+
+.subject-title {
+    font-size: calc(16px + 1 * ((100vw) / 250));
+    font-family: var(--card-title);
+}
+
+.subject .card {
+    max-width: 400px;
+    position: relative;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.card-title {
+    font-family: var(--card-title);
+    margin-left: 1em;
+}
+
+.card-image {
+    max-width: 100%;
+}
