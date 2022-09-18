@@ -29,13 +29,20 @@ body {
     background-color: #171c22;
     box-sizing: border-box;
     font-size: 18px;
-    gap: 3em;
+    gap: 2em;
 }
 
 .section {
     margin-left: 1em;
-    padding: 2em;
+    padding: 1em;
     background-color: #000000;
+}
+
+.section.phone {
+    margin-left: 0;
+    padding: 0.8em;
+    margin: 0 auto;
+    width: 90%
 }
 
 .subject-title {
@@ -57,9 +64,21 @@ body {
     gap: 1em;
 }
 
+.subject.phone {
+    flex-direction: column;
+    max-width: 100%;
+    gap: 3em;
+}
+
 .subject-title {
     font-size: calc(16px + 1 * ((100vw) / 250));
     font-family: var(--card-title);
+}
+
+.subject-title.phone {
+    font-family: var(--game-font);
+    font-size: calc(13px + 1 * ((100vw) / 200));
+    line-height: 1.8;
 }
 
 .subject .card {
@@ -73,11 +92,21 @@ body {
     gap: 1em;
 }
 
+.card:hover .card-title {
+    color: orange;
+}
+
 .card-title {
     font-family: var(--card-title);
     margin-left: 1em;
+    transition: 200ms;
+}
+
+.card-title.phone {
+    font-family: var(--game-font);
 }
 
 .card-image {
     max-width: 100%;
+    cursor: pointer;
 }
