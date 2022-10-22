@@ -90,6 +90,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 1em;
+    text-decoration: none;
 }
 
 .card:hover .card-title {

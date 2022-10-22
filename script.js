@@ -1,12 +1,4 @@
 document.querySelectorAll(".card").forEach(card => {
-    card.addEventListener("click", (e) => {
-        if (card.children[0].getAttribute("src") == "./images/default.png") {
-            e.preventDefault()
-        } else {
-            window.location.href = card.getAttribute("data-href");
-        }
-    })
-
     if (card.children[0].getAttribute("src") == "") {
         card.children[0].setAttribute("src", "./images/default.png")
     }
