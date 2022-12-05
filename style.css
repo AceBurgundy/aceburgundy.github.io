@@ -49,11 +49,15 @@ body {
     margin-bottom: 1em;
 }
 
-#projects {
+.projects {
     font-size: calc(16px + 2 * ((100vw) / 170));
     font-family: var(--game-font);
-    margin: 1em 0 0 1em;
+    margin: 0 0 0 1em;
     text-shadow: 5px 5px gray;
+}
+
+#first-section {
+    margin: 1em 0 0 1em;
 }
 
 .subject {
@@ -110,4 +114,8 @@ body {
 .card-image {
     max-width: 100%;
     cursor: pointer;
+}
+
+#cs50 {
+    max-width: 40vw;
 }
