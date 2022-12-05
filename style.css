@@ -117,5 +117,6 @@ body {
 }
 
 #cs50 {
-    max-width: 40vw;
+    min-width: 40vw;
+    width: 100%;
 }
